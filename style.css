@@ -1,0 +1,61 @@
+:root {
+  --inside-bar-width: 80px;
+  --aside-bar-width: 250px;
+  --player-bar-height: 100px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.bodyClass {
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inside-bar,
+.aside-bar,
+.main-menu {
+  height: calc(100vh - var(--player-bar-height));
+}
+
+.inside-bar {
+  background-color: yellowgreen;
+  width: var(--inside-bar-width);
+}
+
+.aside-bar {
+  background-color: burlywood;
+  width: var(--aside-bar-width);
+}
+
+.main-menu {
+  background-color: paleturquoise;
+  width: calc(100% - var(--aside-bar-width) - var(--inside-bar-width));
+}
+
+.player-bar {
+  background-color: blue;
+  width: 100%;
+  height: 100px;
+}
+
+.artist-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  gap: 1rem;
+  width: 100%;
+  li {
+    width: clamp(150px, calc(25% - 1rem), 400px);
+    background-color: red;
+  }
+}
