@@ -1,0 +1,26 @@
+:root {
+  --inside-bar-width: 80px;
+  --aside-bar-width: 250px;
+  --player-bar-height: 100px;
+  --spotify-dark-color: #121212;
+  --global-gap: 4px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Global Class */
+.spotify-g-layout {
+  width: calc(100% - (2 * var(--global-gap)));
+  height: calc(100% - (2 * var(--global-gap)));
+  margin: var(--global-gap) auto 0;
+  background-color: var(--spotify-dark-color);
+  border-radius: 8px;
+}
